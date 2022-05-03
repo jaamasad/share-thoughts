@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.app-container {
+  max-width: 992px;
+  margin: auto;
+  position: relative;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+  padding-bottom: 0;
+  width: 90%;
+  margin: auto;
+}
+.menu {
+  display: flex;
+}
+.menu-item {
+  width: 30px;
+  padding-right: 30px;
+}
+.menu-item img {
+  width: 100%;
+}
+.color-palletsmenu-item {
+  display: flex;
+}
+.color-icon {
+  width: 20px;
+  height: 20px;
+  border: black solid 1px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+.color-palletsmenu-item .orange {
+  background-color: orange;
+}
+.color-palletsmenu-item .green {
+  background-color: lightgreen;
+}
+.color-palletsmenu-item .blue {
+  background-color: lightblue;
+}
+.color-palletsmenu-item .white {
+  background-color: white;
+}
+.print-container {
+  width: 70%;
+  margin: auto;
+}
+.main-box {
+  width: 100% !important;
+}
+.message-box {
+  width: 70%;
+  border: solid 1px;
+  border-radius: 17px;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+}
+.message-box p {
+  font-size: 1.5rem;
+}
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -100px;
+}
+.testimonials .quates {
+  font-size: 11rem;
+  color: #037d91;
+  font-family: "fangsong" !important;
+  font-weight: 900;
+}
+.testimonials .quates:first-child {
+  margin-top: -40px;
+}
+.testimonials .quates:last-child {
+  margin-top: 90px;
+}
+.print-arrea {
+  display: none;
+}
+.testimonials p {
+  text-align: center;
+  font-size: 26px;
+}
+.testimonials p span {
+  font-size: 12px;
+  padding-left: 92px;
+}
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.input-label {
+  display: flex;
+  align-items: baseline;
+  padding: 6px 0;
+}
+.input-label input {
+  width: 50%;
+  height: 20px;
+}
+.input-label label {
+  font-size: 24px;
+  width: 50%;
+}
+form {
+  padding: 12px 100px;
+  width: 64%;
+  margin: auto;
+}
+.captcha-container {
+  display: flex;
+  flex-direction: column;
+}
+.submit {
+  background: #85e0e9;
+  border: solid 1px;
+  border-radius: 7px;
+  padding: 5px 18px;
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  margin-left: 50%;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.captcha-box {
+  align-items: center;
+}
+.bg-orange {
+  background-color: orange;
+}
+.bg-green {
+  background-color: lightgreen;
+}
+.bg-blue {
+  background-color: lightblue;
+}
+.bg-white {
+  background-color: white;
+}
+.edit {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.edit input {
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.5rem;
+  padding: 11px;
+  border: 1px solid;
+  margin: 12px 0;
+  background-color: transparent;
+}
+.toggle-menu {
+  width: 30px;
+  margin-left: auto;
+  margin-right: 24px;
+  margin-top: 56px;
+  display: none;
+}
+.close {
+  position: absolute;
+  right: 0;
+  top: -22px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.Demo__some-network button {
+  margin: 0 12px;
+}
+.home-btn {
+  width: 40px;
+  margin-top: 44px;
+  margin-bottom: -90px;
+  margin-left: 5%;
+}
+
+/* ===============footer====================== */
+.footer-container {
+  width: 100%;
+  margin-top: 40px;
+}
+.copyright,
+.social-conatainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icon {
+  width: 20px;
+  margin: 12px;
+}
+.social-icon img {
+  width: 100%;
+}
+.page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.page-link a {
+  text-decoration: none;
+  padding: 12px;
+  color: black;
+}
+.visitor-counter {
+  text-align: center;
+}
+.color-icon:hover,
+.menu-item:hover,
+.social-icon:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .toggle-menu {
+    display: block;
+  }
+  .mobile-none {
+    display: none;
+  }
+  header {
+    flex-direction: column;
+    position: absolute;
+    top: -26%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: top 1s;
+    width: fit-content;
+  }
+  .show {
+    top: 5%;
+    transition: top 1s;
+    }
+  .color-icon {
+    margin: 15px;
+  }
+  .menu-item {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  form {
+    width: 100%;
+    padding: 0;
+  }
+  .color-icon {
+    margin-left: 16px;
+  }
+  .menu-item {
+    padding-right: 16px;
+  }
+  .Demo__some-network {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 85px;
+  }
+}
